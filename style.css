@@ -15,17 +15,6 @@ body {
     height: 100vh;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--hd-green);
-    position: sticky;
-    height: var(--hd-height);
-    width: 100%;
-}
-
 section {
     font-family: monospace;
     font-size: 16px;
@@ -55,6 +44,17 @@ nav {
 
 nav a {
     cursor: default;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--hd-green);
+    position: sticky;
+    height: var(--hd-height);
+    width: 100%;
 }
 
 .navbutton {
@@ -102,4 +102,16 @@ nav a {
 
 .center-text {
     text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 26px;
+        /* use when burger-menu implemented
+        font-size: 3.9vw; */
+    }
+
+    /* nav {
+        flex-wrap: wrap;
+    } */
 }
