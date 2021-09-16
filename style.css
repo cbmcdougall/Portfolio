@@ -2,8 +2,8 @@
     --bg-cyan: #009282;
     --bg-darkcyan: #006b62;
     --hd-green: #02b48ea4;
-    --hd-height: 70px;
-    --active-btn: #0daf9c;
+    --hd-height: 60px;
+    --active-btn: 13, 175, 156;
 }
 
 body {
@@ -11,6 +11,8 @@ body {
     /* Don't want the background to repeat itself */
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -21,7 +23,7 @@ header {
     background-color: var(--hd-green);
     position: sticky;
     height: var(--hd-height);
-    width: 100vw;
+    width: 100%;
 }
 
 section {
@@ -42,30 +44,38 @@ h2 {
 div {
     display: flex;
     align-content: flex-start;
-    width: 100vw;
+    width: 100%;
 }
 
 nav {
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
     height: 100%;
-    width: 420px;
+}
+
+nav a {
+    cursor: default;
 }
 
 .navbutton {
     background-color: var(--bg-cyan);
     border-color: var(--hd-green);
+    border-radius: 0.7em;
+    border-width: 3px;
     text-align: center;
     margin: 0.5rem;
     box-shadow: -2px 3px 2px 1px var(--bg-darkcyan);
-    border-radius: 0.5em;
     height: 2.5em;
     width: 90px;
 }
 
+.navbutton:hover {
+    cursor: pointer;
+    background-color: rgba(var(--active-btn), 0.75);
+}
+
 .isactive {
-    background-color: var(--active-btn);
+    background-color: rgb(var(--active-btn));
     font-weight: bold;
 }
 
@@ -90,4 +100,6 @@ nav {
     margin: 1rem;
 }
 
-/* Add responsiveness for nav bar, profile image */
+.center-text {
+    text-align: center;
+}
