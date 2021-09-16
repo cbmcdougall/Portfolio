@@ -1,0 +1,36 @@
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(41, 194, 194);
+    margin: 10px;
+}
+
+section {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #009282, #006b62, #009282);
+    /* Don't want the background to repeat itself */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+.profile-image {
+    /* Centering and applying border to image */
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid teal;
+    border-radius: 50%;
+}
+
+.info-section {
+    background-color: rgba(0, 95, 95, 0.4);
+    border: 3px solid teal;
+    border-radius: 30px;
+}
