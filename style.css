@@ -1,18 +1,9 @@
 :root {
     --bg-cyan: #009282;
     --bg-darkcyan: #006b62;
-    --nav-green: #03b68fa4;
-}
-
-header {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(41, 194, 194);
-    margin: 10px;
-}
-
-section {
-    font-family: monospace;
-    font-size: 16px;
+    --hd-green: #02b48ea4;
+    --hd-height: 70px;
+    --active-btn: #0daf9c;
 }
 
 body {
@@ -22,21 +13,65 @@ body {
     background-size: cover;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--hd-green);
+    position: sticky;
+    height: var(--hd-height);
+    width: 100vw;
+}
+
+section {
+    font-family: monospace;
+    font-size: 16px;
+}
+
 h1 {
-    text-align: center;
+    text-align: left;
+    margin: 1rem;
+}
+
+h2 {
+    color: rgb(41, 194, 194);
+    margin-left: 1rem;
+}
+
+div {
+    display: flex;
+    align-content: flex-start;
+    width: 100vw;
 }
 
 nav {
-    text-align: right;
-    background-color: var(--nav-green);
-    position: sticky;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    height: 100%;
+    width: 420px;
 }
 
-nav a {
-    text-decoration: none;
-    color: black;
-    border-left: 3px solid rgb(0, 128, 107);
-    padding: 0 0.5rem;
+.navbutton {
+    background-color: var(--bg-cyan);
+    border-color: var(--hd-green);
+    text-align: center;
+    margin: 0.5rem;
+    box-shadow: -2px 3px 2px 1px var(--bg-darkcyan);
+    border-radius: 0.5em;
+    height: 2.5em;
+    width: 90px;
+}
+
+.isactive {
+    background-color: var(--active-btn);
+    font-weight: bold;
+}
+
+.headerimage {
+    width: var(--hd-height);
+    height: var(--hd-height);
 }
 
 .profile-image {
