@@ -55,20 +55,22 @@ body {
     width: 100%;
 }
 
-.navbutton {
+.nav-link {
+    margin: 0.5rem;
+}
+
+.nav-button {
     background-color: var(--bg-cyan);
     border-color: var(--nav-green);
     border-radius: 12px;
     border-width: 3px;
     box-shadow: -2px 3px 2px 1px var(--bg-darkcyan);
-    text-align: center;
     font-size: 0.9rem;
-    margin: 0.5rem;
     padding: 0px 1rem;
     height: 2.5rem;
 }
 
-.navbutton:hover {
+.nav-button:hover {
     cursor: pointer;
     background-color: rgba(var(--active-btn), 0.75);
 }
