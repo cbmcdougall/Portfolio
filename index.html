@@ -4,32 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="favicon.png" rel="shortcut icon" type="image/png"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="./static/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="./static/images/favicon.webp" rel="shortcut icon" type="image/webp"/>
     <title>Calum McDougall Portfolio</title>
 </head>
 <body>
-    <header>
-        <img class="headerimage" src="./WavingBulbasaur.png" alt="Waving Bulbasaur">
-        <div>
-            <h1>Calum McDougall</h1>
-        </div>
-        <nav>
-            <a href="./index.html"><button class="navbutton isactive">Home</button></a>
-            <a href="./aboutme.html"><button class="navbutton">About Me</button></a>
-            <a href="./projects.html"><button class="navbutton">Projects</button></a>
-            <a href="./contact.html"><button class="navbutton">Contact</button></a>
+    <header id="header" class="header">
+        <nav id="navbar" class="navbar">
+            <div id="logo" class="logo">
+                <img class="nav_image" src="./static/images/waving-bulbasaur.webp" alt="Waving Bulbasaur">
+                <h1 class="nav_heading">Calum McDougall</h1>
+            </div>
+            <div id="nav-menu" class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a id="nav-link" href="#home"><button class="navbutton isactive">Home</button></a>
+                    </li>
+                    <li class="nav_item">
+                        <a id="nav-link" href="#about"><button class="navbutton">About Me</button></a>
+                    </li>
+                    <li class="nav_item">
+                        <a id="nav-link" href="./projects/"><button class="navbutton">Projects</button></a>
+                    </li>
+                    <li class="nav_item">
+                        <a id="nav-link" href="#contact"><button class="navbutton">Contact</button></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     
-    <img class="profile-image" src="https://i.imgur.com/EVHS2bW.jpg" alt="Photo of me">
-
-    <section class="center-text">
-        <p>
-            Hey i'm Calum, nice to meet you! This is my portfolio site to provide you with some info about me, new info coming soon!
-        </p>
+    <section id="home">
+        <img class="profile_image" src="./static/images/profile-photo.webp" alt="Photo of me">
+    
+        <div class="center_text">
+            <p>
+                Hey i'm Calum, nice to meet you! This is my portfolio site to provide you with some info about me, new info coming soon!
+            </p>
+        </div>
     </section>
+
+    <section id="about">
+        <h2>Some basic info about me:</h2>
+        <ul>
+            <li>Favorite food: a good curry, or cheesecake... I do love cheesecake...</li>
+            <li>Favorite movie series: The Lord of the Rings</li>
+            <li>Personal hobbies:</li>
+            <ul>
+                <li>Listening to music</li>
+                <li>Playing videogames</li>
+                <li>Playing music (recently learning guitar, used to play tenor horn and xylophone)</li>
+                <li>Drawing very occasionally (I drew the favicon used on this page!)</li>
+            </ul>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, reiciendis? Suscipit cumque vel eos earum nulla consectetur, vitae dignissimos explicabo, enim at corrupti mollitia alias quia molestias sunt tempore aspernatur?</p>
+    </section>
+
     
 </body>
 </html>
