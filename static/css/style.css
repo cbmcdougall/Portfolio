@@ -32,10 +32,6 @@ body {
     height: 100%;
 }
 
-/* .nav_image {
-    width: var(--nav-height);
-} */
-
 .nav_heading {
     align-self: center;
     text-align: left;
@@ -45,14 +41,18 @@ body {
 
 .nav_menu {
     display: flex;
-    justify-content: flex-end;
     height: 100%;
+    width: 27rem;
 }
 
 .nav_list {
+    padding: 0;
+    margin-right: 0.5rem;
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .navbutton {
@@ -78,14 +78,40 @@ body {
     font-weight: bold;
 }
 
-/*-----------------------------*/
-.profile_image {
-    /* Centering and applying border to image */
-    width: 180px;
-    display: block;
-    margin: 0 auto;
-    border: 3px solid teal;
+/*----------- Home section -----------*/
+.home-section {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: teal;
+    border: 3px solid var(--bg-cyan);
+    border-radius: 20rem;
+    height: 100%;
+}
+
+.bio-image-container {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.bio-image {
+    height: 100%;
+    border: 3px solid var(--bg-cyan);
+    border-left: none;
     border-radius: 50%;
+}
+
+.bio-text-container {
+    margin: 0 3rem;
 }
 
 .info_section {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./static/js/index.js"></script>
     <link href="./static/css/style.css" rel="stylesheet" type="text/css"/>
     <link href="./static/images/favicon.webp" rel="shortcut icon" type="image/webp"/>
     <title>Calum McDougall Portfolio</title>
@@ -18,33 +19,34 @@
             <div id="nav-menu" class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a id="nav-link" href="#home"><button class="navbutton isactive">Home</button></a>
+                        <a class="nav-link" href="#home"><button id="home-button" class="navbutton">Home</button></a>
                     </li>
                     <li class="nav_item">
-                        <a id="nav-link" href="#about"><button class="navbutton">About Me</button></a>
+                        <a class="nav-link" href="#about"><button id="about-button" class="navbutton">About Me</button></a>
                     </li>
                     <li class="nav_item">
-                        <a id="nav-link" href="./projects/"><button class="navbutton">Projects</button></a>
+                        <a class="nav-link" href="#portfolio"><button id="portfolio-button" class="navbutton">Portfolio</button></a>
                     </li>
                     <li class="nav_item">
-                        <a id="nav-link" href="#contact"><button class="navbutton">Contact</button></a>
+                        <a class="nav-link" href="#contact"><button id="contact-button" class="navbutton">Contact</button></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     
-    <section id="home">
-        <img class="profile_image" src="./static/images/profile-photo.webp" alt="Photo of me">
-    
-        <div class="center_text">
-            <p>
-                Hey i'm Calum, nice to meet you! This is my portfolio site to provide you with some info about me, new info coming soon!
-            </p>
+    <section id="home" class="home-section">
+        <div class="bio">
+            <div class="bio-image-container"><img class="bio-image" src="./static/images/profile-photo.webp" alt="Photo of me"></div>
+            <div class="bio-text-container">
+                <p>
+                    Hey i'm Calum, nice to meet you! This is my portfolio site to provide you with some info about me, new info coming soon!
+                </p>
+            </div>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about-section">
         <h2>Some basic info about me:</h2>
         <ul>
             <li>Favorite food: a good curry, or cheesecake... I do love cheesecake...</li>
@@ -59,10 +61,21 @@
         </ul>
     </section>
     
-    <section id="contact">
+    <section id="portfolio" class="portfolio-section">
+        <div class="projects">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in vitae quasi iure suscipit adipisci, fugiat ullam deleniti alias totam explicabo aliquid perspiciatis soluta voluptas, dolor voluptatibus magnam aliquam? Odit.</p>
+        </div>
+        <div class="technologies">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet veritatis impedit provident nostrum. Vel ex rerum enim tempore modi! Tempore veniam blanditiis distinctio nemo ad ducimus at omnis fugiat ex.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, reiciendis? Suscipit cumque vel eos earum nulla consectetur, vitae dignissimos explicabo, enim at corrupti mollitia alias quia molestias sunt tempore aspernatur?</p>
     </section>
 
-    
+    <footer id="footer" class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minus vero adipisci aperiam, commodi eveniet molestiae. Vitae, doloremque. Perspiciatis numquam accusantium libero, cupiditate obcaecati cum nam alias quos aliquam. In?</p>
+    </footer>
 </body>
 </html>
