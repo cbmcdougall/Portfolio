@@ -1,0 +1,112 @@
+:root {
+    --bg-cyan: #009282;
+    --bg-darkcyan: #006b62;
+    --nav-green: #02b48ea4;
+    --nav-height: 60px;
+    --active-btn: 13, 175, 156; /* RGB colour */
+}
+
+body {
+    margin: 0px;
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: monospace;
+    font-size: 16px;
+    background-color: var(--bg-darkcyan);
+}
+
+/*---------- Nav bar ----------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    position: sticky;
+    height: var(--nav-height);
+    width: 100%;
+    background-color: var(--bg-cyan);
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* .nav_image {
+    width: var(--nav-height);
+} */
+
+.nav_heading {
+    align-self: center;
+    text-align: left;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbutton {
+    background-color: var(--bg-cyan);
+    border-color: var(--nav-green);
+    border-radius: 12px;
+    border-width: 3px;
+    box-shadow: -2px 3px 2px 1px var(--bg-darkcyan);
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    padding: 0px 1rem;
+    height: 2.5rem;
+}
+
+.navbutton:hover {
+    cursor: pointer;
+    background-color: rgba(var(--active-btn), 0.75);
+}
+
+.isactive {
+    background-color: rgb(var(--active-btn));
+    font-weight: bold;
+}
+
+/*-----------------------------*/
+.profile_image {
+    /* Centering and applying border to image */
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid teal;
+    border-radius: 50%;
+}
+
+.info_section {
+    background-color: rgba(0, 95, 95, 0.4);
+    border: 3px solid teal;
+    border-radius: 30px;
+    margin: 1rem;
+}
+
+.center_text {
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 26px;
+        /* use when burger-menu implemented
+        font-size: 3.9vw; */
+    }
+
+    /* nav {
+        flex-wrap: wrap;
+    } */
+}
