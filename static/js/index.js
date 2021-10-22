@@ -1,7 +1,7 @@
 // Determine current active button, default to home
 window.onload = () => {
     const currentSection = window.location.hash.split('#')[1];
-    const sectionButton = document.getElementById(currentSection || "home");
+    const sectionButton = document.getElementById(`${currentSection}-button` || "home-button");
     sectionButton.classList.toggle("isactive");
 }
 
