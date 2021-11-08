@@ -4,7 +4,7 @@
     background-color: var(--tertiary);
     /* color: var(--light); */
     color: var(--primary);
-    text-shadow: 2px 1px var(--tertiary);
+    text-shadow: 1px 1px var(--tertiary);
     padding: 1.5rem;
 }
 
@@ -71,4 +71,5 @@
     cursor: pointer;
     color: var(--tertiary);
     font-weight: bold;
+    text-shadow: none;
 }
