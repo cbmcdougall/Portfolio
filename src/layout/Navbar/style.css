@@ -1,0 +1,38 @@
+.navbar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navlink {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbutton {
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+    color: var(--light);
+    font-family: roboto, helvetica;
+    opacity: 0.6;
+    border: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+.navbutton:hover {
+    cursor: pointer;
+    opacity: 1;
+    background-color: var(--secondary);
+}
+
+.active .navbutton{
+    opacity: 1;
+    font-weight: bolder;
+    background-color: var(--secondary);
+}
