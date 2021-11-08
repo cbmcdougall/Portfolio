@@ -21,7 +21,7 @@ export const Footer = () => {
             </div>
             <Link 
                 className="footer-link" id="emailLink"
-                to={{ pathname: "mailto:c_mcdougall97@yahoo.co.uk"}} 
+                to={{ pathname: "mailto: c_mcdougall97@yahoo.co.uk"}} 
                 target="_blank" rel="noreferrer">
                 <FontAwesomeIcon className="footer-icon" id='email' icon={faEnvelope} size="2x"/>
             </Link>
