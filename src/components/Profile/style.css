@@ -2,7 +2,9 @@
     height: 300px;
     min-width: 700px;
     background-color: var(--tertiary);
-    color: var(--light);
+    /* color: var(--light); */
+    color: var(--primary);
+    text-shadow: 2px 1px var(--tertiary);
     padding: 1.5rem;
 }
 
@@ -58,11 +60,11 @@
 .profile-link {
     font-size: 18px;
     text-decoration: none;
-    color: var(--light);
+    color: var(--primary);
 }
 
 .profile-link:visited {
-    color: var(--light);
+    color: var(--primary);
 }
 
 .profile-link:hover {
