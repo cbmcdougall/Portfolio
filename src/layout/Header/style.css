@@ -48,6 +48,7 @@
     -moz-animation:spin 0.2s linear infinite;
     animation:spin 0.2s linear infinite;
 }
+
 @-moz-keyframes spin { 
     100% { -moz-transform: rotate(90deg); } 
 }
