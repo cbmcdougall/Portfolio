@@ -1,5 +1,6 @@
 .navbar {
     height: 40px;
+    background-color: var(--secondary);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,5 +35,5 @@
 .active .navbutton{
     opacity: 1;
     font-weight: bolder;
-    background-color: var(--secondary);
+    background-color: var(--background);
 }

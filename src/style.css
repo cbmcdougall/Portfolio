@@ -13,5 +13,11 @@ body {
     width: 100vw;
 }
 
+#root {
+    background-color: var(--tertiary);
+    color: var(--primary);
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
