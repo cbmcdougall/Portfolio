@@ -1,13 +1,15 @@
 :root {
     --background: #000115;
     --light: #479cc0;
-    --primary: #3f7aa1;
+    --primary: #7C9EE2;
     --secondary: #5e5290;
     --tertiary: #25283a;
 }
 
 body {
     margin: 0;
+    width: 100vw;
+    min-width: 750px;
     width: 100vw;
 }
 
