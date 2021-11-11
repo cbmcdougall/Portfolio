@@ -8,12 +8,13 @@
 
 body {
     margin: 0;
-    width: 100vw;
+    margin-bottom: 60px; /* For the footer */
+    max-width: 100vw;
     min-width: 750px;
-    width: 100vw;
 }
 
 #root {
+    min-height: 100vh;
     background-color: var(--tertiary);
     color: var(--primary);
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
