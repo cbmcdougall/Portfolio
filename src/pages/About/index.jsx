@@ -70,7 +70,7 @@ export const About = () => {
                 <section className="about-section" id="drawing">
                     <h3 className="about-section-header">Drawing</h3>
                     <p className="about-section-content">
-                        Every once in a blue moon I like to draw. Majority of what I draw are emotes based off of the pokémon Bulbasaur (for example, the logo in the upper left of the page!), but have occasionally drawn other things for friends.
+                        Every once in a blue moon I like to draw. Majority of what I draw are emotes based off of the pokémon Bulbasaur (for example, the picture in the header of the page!), but have occasionally drawn other things for friends.
                     </p>
                 </section>
             </article>
