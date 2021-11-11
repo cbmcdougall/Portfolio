@@ -9,7 +9,7 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <Link 
-                className="footer-link" 
+                className="footer-link" id="githubLink"
                 to={{ pathname: "https://github.com/cbmcdougall"}} 
                 target="_blank" rel="noreferrer">
                 <FontAwesomeIcon className="footer-icon" id='github' icon={faGithubSquare} size="2x"/>
@@ -20,8 +20,8 @@ export const Footer = () => {
                 <FontAwesomeIcon className="contact-icon" icon={faLongArrowAltRight} size="2x" />
             </div>
             <Link 
-                className="footer-link" 
-                to={{ pathname: "mailto:c_mcdougall97@yahoo.co.uk"}} 
+                className="footer-link" id="emailLink"
+                to={{ pathname: "mailto: c_mcdougall97@yahoo.co.uk"}} 
                 target="_blank" rel="noreferrer">
                 <FontAwesomeIcon className="footer-icon" id='email' icon={faEnvelope} size="2x"/>
             </Link>
