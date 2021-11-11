@@ -12,8 +12,8 @@ export const Portfolio = () => {
     return (
         <main id="portfolio">
             <section id="technologies">
-                <h2 className="portfolio-section-header">Technologies</h2>
-                <div className="portfolio-flex"></div>
+                <h2 className="portfolio-section-header">Known Technologies</h2>
+                <div className="portfolio-flex">{renderTechnologies()}</div>
             </section>
             <section id="projects">
                 <h2 className="portfolio-section-header">Projects</h2>
