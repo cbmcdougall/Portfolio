@@ -1,5 +1,7 @@
 .footer {
-    position: sticky;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     background-color: var(--background);
     color: var(--light);
     height: 60px;
@@ -37,5 +39,4 @@
 
 .footer-text {
     font-size: 22px;
-    font-family: roboto, helvetica;
 }
