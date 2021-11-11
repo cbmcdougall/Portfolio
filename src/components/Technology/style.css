@@ -1,0 +1,28 @@
+.technology-card {
+    position: relative;
+    width: 120px;
+}
+
+.technology-card .technology-title {
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.technology-card:hover .technology-title {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.technology-image {
+    display: block;
+    margin: 0 auto;
+}

@@ -11,7 +11,7 @@ export const projects = [
         title: "Portfolio",
         image: projectImages["portfolio.png"],
         github: "https://github.com/cbmcdougall/Portfolio",
-        deploy: "https://portfolio-calum.netlify.app/",
+        deploy: "",
         description: "This portfolio website was built using React!"
     },
     {
