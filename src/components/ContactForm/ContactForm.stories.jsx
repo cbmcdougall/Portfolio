@@ -6,8 +6,4 @@ export default {
     component: ContactForm
 }
 
-export const contactForm = () => {
-    return (
-        <ContactForm />
-    )
-}
+export const contactForm = () => <ContactForm />
