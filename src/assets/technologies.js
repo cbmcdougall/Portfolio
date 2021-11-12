@@ -12,8 +12,20 @@ export const technologies = [
         image: technologyImages["html-css-js.png"],
     },
     {
-        title: "Python, fortran90, Mathematica, LaTeX",
-        image: technologyImages["codefile.png"],
+        title: "Python",
+        image: technologyImages["python.png"],
+    },
+    {
+        title: "fortran90",
+        image: technologyImages["fortran.png"],
+    },
+    {
+        title: "Mathematica",
+        image: technologyImages["mathematica.png"],
+    },
+    {
+        title: "LaTeX",
+        image: technologyImages["LaTeX.png"],
     },
     {
         title: "PostGreSQL",
