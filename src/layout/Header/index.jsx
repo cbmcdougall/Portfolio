@@ -17,10 +17,11 @@ export const Header = () => {
                 <div className="heading-container">
                     <h1 className="heading">Calum McDougall</h1>
                 </div>
-                <div className="nav-menu-container" aria-label={`${navOpen ? "Close" : "Open"} NavBar`}>
+                <div className="nav-menu-container">
                     <FontAwesomeIcon
                         onClick={handleClick} className="nav-menu"
                         icon={navOpen ? faTimes : faBars}
+                        title={`${navOpen ? "Close" : "Open"} NavBar`}
                     />
                 </div>
             </header>
