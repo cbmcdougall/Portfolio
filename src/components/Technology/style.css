@@ -1,6 +1,7 @@
 .technology-card {
     position: relative;
     width: 120px;
+    margin-bottom: 35px;
 }
 
 .technology-card .technology-title {

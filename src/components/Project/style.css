@@ -1,3 +1,53 @@
 .project-card {
     width: 450px;
+    height: 390px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-img-container {
+    height: 220px;
+}
+.project-title-container {
+    height: 50px;
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-info-container {
+    height: 120px;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* .project-description-container {
+    margin-bottom: auto;
+} */
+
+.project-links {
+    display: flex;
+    align-items: center;
+}
+
+.project-link, .collab-link {
+    color: var(--primary);
+}
+
+.collab-link {
+    margin-left: 0.5rem;
+}
+
+.collab-link:not(:last-child)::after {
+    content: ",";
+}
+
+.project-link:visited, .collab-link:visited {
+    color: var(--primary);
 }
