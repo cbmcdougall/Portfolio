@@ -30,7 +30,7 @@ export const Contact = () => {
                             <FontAwesomeIcon className="contact-icon" icon={faMapMarkerAlt} size="3x" />
                             <div className="contact-method-text">
                                 <h3 className="contact-method-title">Location</h3>
-                                <span className="contact-method-subtitle">Fife</span>
+                                <span className="contact-method-subtitle">Glenrothes, Fife</span>
                             </div>
                         </div>
                     </div>

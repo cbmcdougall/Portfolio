@@ -17,7 +17,7 @@ export const Project = ({ projectInfo }) => {
                     <img
                         src={image} alt={`${title} image`}
                         className="project-img"
-                        width="450px" height="217px"
+                        width="400px" height="217px"
                     />
                 </div>
                 <div className="project-title-container">

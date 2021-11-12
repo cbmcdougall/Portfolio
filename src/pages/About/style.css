@@ -19,10 +19,34 @@ h1.about-article-header {
     margin: auto 0;
 }
 
-.about-section {
+.about-article-content {
     padding: 0 1.5rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-section-header {
+    text-align: center;
+    padding: 1rem 0;
+    margin: auto;
+    border-bottom: 2px solid var(--secondary);
+}
+
+#summary .about-section {
+    width: calc(50% - 0.75rem);
+}
+
+#journey .about-section {
+    width: calc(50% - 0.75rem);
+}
+
+#hobbies .about-section {
+    width: calc((100% / 3) - 0.75rem);
+}
+
+.about-section-content {
+    text-align: justify;
 }
 
 .about-link {
