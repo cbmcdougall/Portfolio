@@ -6,18 +6,24 @@ import './style.css';
 export const About = () => {
     return (
         <main id="about">
-            <section className="about-section" id="summary">
-                <h1 className="about-article-header">About Me</h1>
-                <p className="about-section-content">
-                    Hey there, you've clicked onto the about page so you must wanna know about me! In short, i'm an astrophysics graduate with a curiosity to understand how things work. I have a keen eye for detail and i'm always yearning to learn more and improve my skills, knowledge, and to grow as a person overall!
-                </p>
-                <p className="about-section-content">
-                    In my time orbiting the Sun on the planet we call Earth I have fallen in love with physics, coding, and music (playing multiple instruments in my free time over the years). Scroll down if you want to read more about my <a className="about-link" href="#journey">journey</a> through life or to read about my <a className="about-link" href="#hobbies">hobbies</a>.
-                </p>
-            </section>
-            <article id="journey">
-                <a className="about-link" href="#"><FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" /></a>
-                <h2 className="about-article-header">My Journey</h2>
+            <article className="about-article" id="summary">
+                <div className="about-article-heading">
+                    <h1 className="about-article-header">About Me</h1>
+                </div>
+                <section className="about-section">
+                    <p className="about-section-content">
+                        Hey there, you've clicked onto the about page so you must wanna know about me! In short, i'm an astrophysics graduate with a curiosity to understand how things work. I have a keen eye for detail and i'm always yearning to learn more and improve my skills, knowledge, and to grow as a person overall!
+                    </p>
+                    <p className="about-section-content">
+                        In my time orbiting the Sun on the planet we call Earth I have fallen in love with physics, coding, and music (playing multiple instruments in my free time over the years). Scroll down if you want to read more about my <a className="about-link" href="#journey">journey</a> through life or to read about my <a className="about-link" href="#hobbies">hobbies</a>.
+                    </p>
+                </section>
+            </article>
+            <article className="about-article" id="journey">
+                <div className="about-article-heading">
+                    <a className="about-link" href="#"><FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" /></a>
+                    <h2 className="about-article-header">My Journey</h2>
+                </div>
                 <section className="about-section" id="highschool">
                     <h3 className="about-section-header">Glenrothes High School (2009-2015)</h3>
                     <p className="about-section-content">
@@ -49,9 +55,11 @@ export const About = () => {
                     </p>
                 </section>
             </article>
-            <article id="hobbies">
-                <a className="about-link" href="#"><FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" /></a>
-                <h2 className="about-article-header">Hobbies</h2>
+            <article className="about-article" id="hobbies">
+                <div className="about-article-heading">
+                    <a className="about-link" href="#"><FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" /></a>
+                    <h2 className="about-article-header">Hobbies</h2>
+                </div>
                 <section className="about-section" id="gaming">
                     <h3 className="about-section-header">Gaming</h3>
                     <p className="about-section-content">
