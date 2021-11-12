@@ -28,7 +28,9 @@ export const About = () => {
             </article>
             <article className="about-article" id="journey">
                 <div className="about-article-heading">
-                    <a className="about-link" href="#"><FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" /></a>
+                    <a className="about-link" href="#">
+                        <FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" title="Return to top" />
+                    </a>
                     <h2 className="about-article-header">My Journey</h2>
                 </div>
                 <div className="about-article-content">
@@ -66,7 +68,9 @@ export const About = () => {
             </article>
             <article className="about-article" id="hobbies">
                 <div className="about-article-heading">
-                    <a className="about-link" href="#"><FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" /></a>
+                    <a className="about-link" href="#">
+                        <FontAwesomeIcon className="to-top" icon={faArrowAltCircleUp} size="2x" title="Return to top" />
+                    </a>
                     <h2 className="about-article-header">Hobbies</h2>
                 </div>
                 <div className="about-article-content">
