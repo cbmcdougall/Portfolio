@@ -1,3 +1,3 @@
 # Calum McDougall Futureproof Portfolio
 
-View site [here](https://portfolio-calum.netlify.app/)
+View site [here](https://calum-mcdougall.netlify.app/)
