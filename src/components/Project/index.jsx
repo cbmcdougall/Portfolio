@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './style.css';
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export const Project = ({ projectInfo }) => {
     const { title, image, github, deploy, description, collaborators } = projectInfo;
@@ -27,7 +27,7 @@ export const Project = ({ projectInfo }) => {
                             className="project-link"
                             to={{ pathname: github }}
                             target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon className="project-github-link" icon={faGithubSquare} size="2x" />
+                            <FontAwesomeIcon className="project-github-link" icon={faGithub} size="2x" />
                         </Link>
                         {
                             deploy &&
@@ -35,7 +35,7 @@ export const Project = ({ projectInfo }) => {
                                 className="project-link"
                                 to={{ pathname: deploy }}
                                 target="_blank" rel="noreferrer">
-                                <FontAwesomeIcon className="project-deploy-link" icon={faExternalLinkAlt} size="2x" />
+                                <FontAwesomeIcon className="project-deploy-link" icon={faLink} size="2x" />
                             </Link>
                         }
                     </div>
