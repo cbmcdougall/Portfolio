@@ -1,10 +1,28 @@
+.contact-section {
+    padding: 0 1.5rem;
+}
+
 .contact-method {
     width: 400px;
+    margin: 1.5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.contact-icon {
+    margin: 0 auto;
+}
+
 .contact-method-text {
     width: 60%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-method-title {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }

@@ -34,9 +34,9 @@ export const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <ContactForm /> */}
                 </div>
             </section>
+            {/* <ContactForm /> */}
         </main>
     )
 }
