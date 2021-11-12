@@ -1,9 +1,4 @@
-const importAllImages = r => {
-    let images = {};
-    r.keys().map(item => { images[item.replace('./', '')] = r(item); });
-    return images;
-}
-
+import { importAllImages } from "./helpers";
 const projectImages = importAllImages(require.context('./project-images', false, /\.(webp|webp)$/));
 
 export const projects = [
