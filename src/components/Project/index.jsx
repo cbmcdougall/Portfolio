@@ -1,24 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './style.css';
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 export const Project = ({ projectInfo }) => {
-    const { title, image, github, deploy, description } = projectInfo;
-    // const [showDesc, setShowDesc] = useState(false);
+    const { title, image, github, deploy, description, collaborators } = projectInfo;
 
-    // const handleMouseEnter = () => setShowDesc(true);
-    // const handleMouseLeave = () => setShowDesc(false);
+    const renderCollaborators = () => collaborators.map((c, i) => <Link key={i} className="collab-link" to={{ pathname: c.url }} target="_blank" rel="noreferrer">{c.name}</Link>)
 
     return (
-        <div
-            className="project-card"
-        // onMouseEnter={handleMouseEnter}
-        // onMouseLeave={handleMouseLeave}
-        >
-            {/* <div className={`project-overview${showDesc ? " blurred" : ""}`}> */}
+        <div className="project-card">
             <div className='project-overview'>
                 <div className="project-img-container">
                     <img
@@ -29,29 +22,36 @@ export const Project = ({ projectInfo }) => {
                 </div>
                 <div className="project-title-container">
                     <h1 className="project-title">{title}</h1>
+                    <div className="project-links">
+                        <Link
+                            className="project-link"
+                            to={{ pathname: github }}
+                            target="_blank" rel="noreferrer">
+                            <FontAwesomeIcon className="project-github-link" icon={faGithub} size="2x" />
+                        </Link>
+                        {
+                            deploy &&
+                            <Link
+                                className="project-link"
+                                to={{ pathname: deploy }}
+                                target="_blank" rel="noreferrer">
+                                <FontAwesomeIcon className="project-deploy-link" icon={faLink} size="2x" />
+                            </Link>
+                        }
+                    </div>
                 </div>
             </div>
             <div className="project-info-container">
                 <div className="project-description-container">
                     <p className="project-description">{description}</p>
                 </div>
-                <div className="project-links">
-                    <Link
-                        className="project-link"
-                        to={{ pathname: github }}
-                        target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon className="project-github-link" icon={faGithubSquare} size="3x" />
-                    </Link>
-                    {
-                        deploy &&
-                        <Link
-                            className="project-link"
-                            to={{ pathname: deploy }}
-                            target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon className="project-deploy-link" icon={faExternalLinkAlt} size="3x" />
-                        </Link>
-                    }
-                </div>
+                {
+                    !!collaborators.length &&
+                    <div className="project-collaborators-container">
+                        <span>Collaborators:</span>
+                        {renderCollaborators()}
+                    </div>
+                }
             </div>
         </div>
     )
