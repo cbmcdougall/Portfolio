@@ -8,7 +8,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 export const Project = ({ projectInfo }) => {
     const { title, image, github, deploy, description, collaborators } = projectInfo;
 
-    const renderCollaborators = () => collaborators.map(c => <Link className="collab-link" to={{ pathname: c.url }} target="_blank" rel="noreferrer">{c.name}</Link>)
+    const renderCollaborators = () => collaborators.map((c, i) => <Link key={i} className="collab-link" to={{ pathname: c.url }} target="_blank" rel="noreferrer">{c.name}</Link>)
 
     return (
         <div className="project-card">
