@@ -9,42 +9,54 @@ const technologyImages = importAllImages(require.context('./technology-images', 
 export const technologies = [
     {
         title: "HTML/CSS/JS",
-        image: technologyImages["html-css-js.png"],
+        image: technologyImages["html-css-js.webp"],
     },
     {
-        title: "Python, fortran90, Mathematica, LaTeX",
-        image: technologyImages["codefile.png"],
+        title: "Python",
+        image: technologyImages["python.webp"],
+    },
+    {
+        title: "fortran90",
+        image: technologyImages["fortran.webp"],
+    },
+    {
+        title: "Mathematica",
+        image: technologyImages["mathematica.webp"],
+    },
+    {
+        title: "LaTeX",
+        image: technologyImages["LaTeX.webp"],
     },
     {
         title: "PostGreSQL",
-        image: technologyImages["postgresql.png"],
+        image: technologyImages["postgresql.webp"],
     },
     {
         title: "MongoDB",
-        image: technologyImages["mongodb.png"],
+        image: technologyImages["mongodb.webp"],
     },
     {
         title: "React",
-        image: technologyImages["react.png"],
+        image: technologyImages["react.webp"],
     },
     {
         title: "Jest",
-        image: technologyImages["jest.png"],
+        image: technologyImages["jest.webp"],
     },
     {
         title: "Docker",
-        image: technologyImages["docker.png"],
+        image: technologyImages["docker.webp"],
     },
     {
         title: "GitHub",
-        image: technologyImages["github.png"],
+        image: technologyImages["github.webp"],
     },
     {
         title: "Netlify",
-        image: technologyImages["netlify.png"],
+        image: technologyImages["netlify.webp"],
     },
     {
         title: "Heroku",
-        image: technologyImages["heroku.png"],
+        image: technologyImages["heroku.webp"],
     }
 ]
