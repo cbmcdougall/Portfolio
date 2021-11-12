@@ -26,16 +26,18 @@ export const Project = ({ projectInfo }) => {
                         <Link
                             className="project-link"
                             to={{ pathname: github }}
-                            target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon className="project-github-link" icon={faGithub} size="2x" />
+                            target="_blank" rel="noreferrer"
+                        >
+                            <FontAwesomeIcon className="project-github-link" icon={faGithub} size="2x" title={`${title} Github`} />
                         </Link>
                         {
                             deploy &&
                             <Link
                                 className="project-link"
                                 to={{ pathname: deploy }}
-                                target="_blank" rel="noreferrer">
-                                <FontAwesomeIcon className="project-deploy-link" icon={faLink} size="2x" />
+                                target="_blank" rel="noreferrer"
+                            >
+                                <FontAwesomeIcon className="project-deploy-link" icon={faLink} size="2x" title={`${title} Deploy`} />
                             </Link>
                         }
                     </div>

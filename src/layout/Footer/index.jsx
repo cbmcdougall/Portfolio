@@ -12,7 +12,10 @@ export const Footer = () => {
                 className="footer-link" id="githubLink"
                 to={{ pathname: "https://github.com/cbmcdougall" }}
                 target="_blank" rel="noreferrer">
-                <FontAwesomeIcon className="footer-icon" id='github' icon={faGithubSquare} size="2x" />
+                <FontAwesomeIcon
+                    className="footer-icon" id='github'
+                    icon={faGithubSquare} size="2x" title="GitHub: cbmcdougall"
+                />
             </Link>
             <div className="text-container">
                 <span className="footer-text">Calum McDougall © 2021</span>
@@ -21,7 +24,10 @@ export const Footer = () => {
                 className="footer-link" id="emailLink"
                 to={{ pathname: "mailto: c_mcdougall97@yahoo.co.uk" }}
                 target="_blank" rel="noreferrer">
-                <FontAwesomeIcon className="footer-icon" id='email' icon={faEnvelope} size="2x" />
+                <FontAwesomeIcon
+                    className="footer-icon" id='email'
+                    icon={faEnvelope} size="2x" title="Email: c_mcdougall97@yahoo.co.uk"
+                />
             </Link>
         </footer>
     )
