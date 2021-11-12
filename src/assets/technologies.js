@@ -1,8 +1,4 @@
-const importAllImages = r => {
-    let images = {};
-    r.keys().map(item => { images[item.replace('./', '')] = r(item); });
-    return images;
-}
+import { importAllImages } from "./helpers";
 
 const technologyImages = importAllImages(require.context('./technology-images', false, /\.(png|webp)$/));
 
@@ -16,7 +12,7 @@ export const technologies = [
         image: technologyImages["python.webp"],
     },
     {
-        title: "fortran90",
+        title: "Fortran90",
         image: technologyImages["fortran.webp"],
     },
     {
