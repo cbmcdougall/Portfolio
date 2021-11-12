@@ -1,3 +1,11 @@
 .project-card {
     width: 450px;
 }
+
+.project-link, .collab-link {
+    color: var(--primary);
+}
+
+.project-link:visited, .collab-link:visited {
+    color: var(--secondary);
+}
