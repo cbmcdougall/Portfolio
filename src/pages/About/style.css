@@ -10,6 +10,10 @@
     margin: auto 1.5rem;
 }
 
+.to-top:hover {
+    cursor: pointer;
+}
+
 h1.about-article-header {
     margin: auto;
     font-size: 2rem;
@@ -55,4 +59,8 @@ h1.about-article-header {
 
 .about-link:visited {
     color: var(--primary);
+}
+
+.about-article-heading .about-link:hover {
+    cursor: default;
 }
