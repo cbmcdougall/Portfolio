@@ -16,4 +16,5 @@
 .portfolio-section-header {
     margin: auto;
     font-size: 1.6rem;
+    text-shadow: 2px 2px 5px var(--tertiary);
 }
