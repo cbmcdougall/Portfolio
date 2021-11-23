@@ -6,6 +6,10 @@
     --tertiary: #25283a;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     margin-bottom: 60px; /* For the footer */
