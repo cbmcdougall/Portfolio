@@ -1,13 +1,14 @@
 import React from "react";
 import { Project, Technology } from '../../components';
+import { shuffle } from "../../assets/helpers";
 import { technologies } from '../../assets/technologies.js';
 import { projects } from '../../assets/projects.js';
 import './style.css';
 
 export const Portfolio = () => {
 
-    const renderTechnologies = () => technologies.map((t, i) => <Technology key={i} data={t} />)
-    const renderProjects = () => projects.map((p, i) => <Project key={i} projectInfo={p} />)
+    const renderTechnologies = () => shuffle(technologies).map((t, i) => <Technology key={i} data={t} />)
+    const renderProjects = () => shuffle(projects).map((p, i) => <Project key={i} projectInfo={p} />)
 
     return (
         <main id="portfolio">
