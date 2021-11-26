@@ -8,7 +8,7 @@ export const Technology = ({ data }) => {
         <div className="technology-card">
             <span className="technology-title">{title}</span>
             <img
-                src={image} alt={`title image`}
+                src={image} alt={`${title} image`}
                 className="technology-image"
                 width="100px" height="100px"
             />

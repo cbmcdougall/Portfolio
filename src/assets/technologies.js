@@ -54,5 +54,13 @@ export const technologies = [
     {
         title: "Heroku",
         image: technologyImages["heroku.webp"],
+    },
+    {
+        title: "Django",
+        image: technologyImages["django.webp"],
+    },
+    {
+        title: "Flask",
+        image: technologyImages["flask.webp"],
     }
 ]
