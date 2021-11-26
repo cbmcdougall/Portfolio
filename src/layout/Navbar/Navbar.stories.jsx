@@ -11,7 +11,7 @@ export default {
 export const navbar = () => {
     return (
         <Router>
-            <Navbar />
+            <Navbar navbarClass="show" />
         </Router>
     )
 }

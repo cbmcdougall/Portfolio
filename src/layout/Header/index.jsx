@@ -25,7 +25,7 @@ export const Header = () => {
                     />
                 </div>
             </header>
-            {navOpen && <Navbar />}
+            {navOpen ? <Navbar navbarClass="show" /> : <Navbar navbarClass="hide" />}
         </>
     )
 }
