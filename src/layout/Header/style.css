@@ -36,7 +36,7 @@
 
 .nav-menu {
     margin-right: 1em;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .nav-menu:hover {
@@ -44,20 +44,20 @@
 }
 
 .nav-menu:active {
-    -webkit-animation:spin 0.2s linear infinite;
-    -moz-animation:spin 0.2s linear infinite;
-    animation:spin 0.2s linear infinite;
+    -webkit-animation:spin 0.5s linear infinite;
+    -moz-animation:spin 0.5s linear infinite;
+    animation:spin 0.5s linear infinite;
 }
 
 @-moz-keyframes spin { 
-    100% { -moz-transform: rotate(90deg); } 
+    100% { -moz-transform: rotate(180deg); } 
 }
 @-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(90deg); } 
+    100% { -webkit-transform: rotate(180deg); } 
 }
 @keyframes spin { 
     100% { 
-        -webkit-transform: rotate(90deg); 
-        transform:rotate(90deg); 
+        -webkit-transform: rotate(180deg); 
+        transform:rotate(180deg); 
     } 
 }
