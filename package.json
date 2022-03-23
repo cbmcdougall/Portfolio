@@ -31,7 +31,6 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.4",
-    "browserslist": "^4.20.2",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "glob-parent": "^6.0.2",
@@ -62,11 +61,6 @@
     }
   },
   "resolutions": {
-    "set-value": "^4.1.0",
-    "trim": "^1.0.1",
-    "browserslist": "^4.17.6",
-    "glob-parent": "^6.0.2",
-    "immer": "^9.0.6",
     "ansi-html": "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz"
   }
 }
